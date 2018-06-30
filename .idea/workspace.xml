@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a4858f8-af42-4560-91be-14111c68391d" name="Default" comment="" />
+    <list default="true" id="9a4858f8-af42-4560-91be-14111c68391d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="518">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -31,6 +42,9 @@
       <find>exp</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -40,6 +54,7 @@
         <option value="$PROJECT_DIR$/gettoken/config.js" />
         <option value="$PROJECT_DIR$/gettoken/server.js" />
         <option value="$PROJECT_DIR$/src/admin.html" />
+        <option value="$PROJECT_DIR$/src/css/admin.css" />
       </list>
     </option>
   </component>
@@ -61,6 +76,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -77,47 +93,13 @@
             <path>
               <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
               <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="gettoken" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu-js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu-js" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu-js" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu-js" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
               <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="qiniu-js" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="plupload" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -154,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530369419645</updated>
-      <workItem from="1530369423269" duration="4980000" />
+      <workItem from="1530369423269" duration="10821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4980000" />
+    <option name="totallyTimeSpent" value="10821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1360" height="877" extended-state="6" />
@@ -170,7 +152,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -205,20 +187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/qiniu-js/demo/config.js.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gettoken/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -247,10 +215,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gettoken/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/qiniu-js/demo/config.js.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="518">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
         </state>
       </provider>
     </entry>
