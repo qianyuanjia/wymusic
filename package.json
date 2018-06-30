@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "server": "node ./gettoken/server.js"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "leancloud-storage": "^3.7.3",
+    "qiniu-js": "^1.0.24"
+  },
+  "devDependencies": {
+    "ejs": "^2.6.1",
+    "express": "^3.4.8",
+    "qiniu": "~7.0.5"
+  }
+}
