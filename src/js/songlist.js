@@ -6,14 +6,23 @@
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-music"></use>
                     </svg>
-                    <div>
-                        <p class="songname">刚好遇见你</p>
-                        <p class="singer">排骨教主</p>
+                    <div class="listwrap">
+                        <p class="songname">{{name}}</p>
+                        <p class="singer">{{singer}}</p>
                     </div>
                 </li>
         `,
-        render(){
-            $(this.el).html(this.template)
+        render(songs){
+            if(songs.length>0){
+                let htmlStr=''
+                for(let i=songs.length-1;i>=0;i--){
+                    let str=this.template
+                    str=str.replace('{{name}}',songs[i].attributes.name)
+                    str=str.replace('{{singer}}',songs[i].attributes.singer)
+                    htmlStr+=str
+                }
+                $(this.el).html(htmlStr)
+            }
         }
     }
     let modle={
@@ -28,9 +37,9 @@
         },
         getSongInfo(){
             var query = new AV.Query('Song');
-            query.find().then(function (songs) {
-
-                console.log(songs[0].attributes);
+            query.find().then((songs)=>{
+                this.songs=songs
+                this.view.render(songs)
             })
         }
     }
@@ -39,14 +48,13 @@
             this.view=view
             this.modle=modle
             this.modle.init()
-            this.modle.getSongInfo()
-            this.view.render()
+            this.modle.getSongInfo.call(this)
             this.bindEvents()
         },
         bindEvents(){
-            window.eventHub.on('upload_success',(data)=>{
-                console.log("sonlist receive")
-                console.log(data);
+            window.eventHub.on('save_success',(data)=>{
+                this.songs.push(data)
+                this.view.render(this.songs)
             })
         }
     }

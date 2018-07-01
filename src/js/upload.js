@@ -2,10 +2,12 @@
     let view={
         el:'#uparea',
         template:`
-            <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-0801zengjia"></use>
-            </svg>
-            <span id="upbtn">上传音频文件</span>
+            <p id="upbtn">
+                <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-0801zengjia"></use>
+                </svg>
+                上传音频文件
+            </p>
         `,
         render(){
             $(this.el).html(this.template)
@@ -63,11 +65,11 @@
                         // var res = parseJSON(info.response);
                         var domain= 'http://pb54jh10a.bkt.clouddn.com/'
                         var songinfo={}
-                        songinfo.name=file.name
+                        songinfo.name=file.name.indexOf('-')>=0?file.name.split('-')[1].trim():file.name
                         songinfo.url = domain + encodeURIComponent(songinfo.name); //获取上传成功后的文件的Url
                         songinfo.singer='佚名'
-                        if(songinfo.name.indexOf('-')>0){
-                            songinfo.singer=songinfo.name.split('-')[0].trim() || '佚名'
+                        if(file.name.indexOf('-')>0){
+                            songinfo.singer=file.name.split('-')[0].trim() || '佚名'
                         }
                         $('.uploading span').text('上传成功！')
                         window.eventHub.emit('upload_success',JSON.parse(JSON.stringify(songinfo)))
