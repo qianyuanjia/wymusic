@@ -29,12 +29,15 @@
             this.view.render()
             this.bindEvents.call(this)
         },
+        padFormValue(data){
+            let formObj=$(this.view.el).find('form').get(0)
+            formObj.name.value=data.name
+            formObj.singer.value=data.singer
+            formObj.url.value=data.url
+        },
         bindEvents(){
             window.eventHub.on('upload_success',(data)=>{
-                let formObj=$(this.view.el).find('form').get(0)
-                formObj.name.value=data.name
-                formObj.singer.value=data.singer
-                formObj.url.value=data.url
+                this.padFormValue(data)
             })
             $(this.view.el).find('input[type=submit]').on('click',(ev)=>{
                 ev.preventDefault()
@@ -46,27 +49,52 @@
                     },1000)
                     return
                 }
+                var targetObj=ev.currentTarget
+                if(targetObj.value=='确定'){
+                    // 声明类型
+                    var SongClass = AV.Object.extend('Song');
+                    // 新建对象
+                    var song = new SongClass();
 
-                // 声明类型
-                var SongClass = AV.Object.extend('Song');
-                // 新建对象
-                var song = new SongClass();
-
-                // 设置名称
-                song.set({
-                    name:formObj.name.value,
-                    singer:formObj.singer.value,
-                    url:formObj.url.value
-                });
-                song.save().then(function (info) {
-                    window.eventHub.emit('save_success',info)
-                    $('.uploading').removeClass('hide').children().text('保存成功！')
-                    setTimeout(()=>{
-                        $('.uploading').addClass('hide')
-                    },1000)
-                    formObj.reset()
-                })
-
+                    // 设置名称
+                    song.set({
+                        name:formObj.name.value,
+                        singer:formObj.singer.value,
+                        url:formObj.url.value
+                    });
+                    song.save().then(function (info) {
+                        window.eventHub.emit('save_success',info)
+                        $('.uploading').removeClass('hide').children().text('保存成功！')
+                        setTimeout(()=>{
+                            $('.uploading').addClass('hide')
+                        },1000)
+                        formObj.reset()
+                    })
+                }else{
+                    // 第一个参数是 className，第二个参数是 objectId
+                    var song = AV.Object.createWithoutData('Song', this.updateId);
+                    // 修改属性
+                    song.set({
+                        name:formObj.name.value,
+                        singer:formObj.singer.value,
+                        url:formObj.url.value
+                    });
+                    // 保存到云端
+                    song.save().then(function (info) {
+                        window.eventHub.emit('update_success',info)
+                        $('.uploading').removeClass('hide').children().text('修改成功！')
+                        setTimeout(()=>{
+                            $('.uploading').addClass('hide')
+                        },1000)
+                        formObj.reset()
+                        targetObj.value='确定'
+                    });
+                }
+            })
+            window.eventHub.on('fetchSongInfo',(data)=>{
+                this.padFormValue(data)
+                this.updateId=data.id
+                $(this.view.el).find('input[type=submit]').val('修改')
             })
         }
     }
