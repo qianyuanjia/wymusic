@@ -85,6 +85,7 @@
                 let id=$(ev.currentTarget).attr('data-song-id')
                 this.modle.getSongInfo(id)
             })
+
         }
     }
     controller.init(view,modle)
