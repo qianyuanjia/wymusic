@@ -72,6 +72,15 @@
                 }
                 this.view.render(this.songs)
             })
+            window.eventHub.on('delete_success',(data)=>{
+                for(let i=0;i<this.songs.length;i++){
+                    if(this.songs[i].id===data.id){
+                        this.songs.splice(i,1)
+                        break
+                    }
+                }
+                this.view.render(this.songs)
+            })
             $(this.view.el).on('click','li',(ev)=>{
                 let id=$(ev.currentTarget).attr('data-song-id')
                 this.modle.getSongInfo(id)

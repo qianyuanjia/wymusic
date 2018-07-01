@@ -70,16 +70,16 @@ section .wrap{
     border-radius: 4px;
     border: 1px solid #ccc;
 }
-.submit{
+.submit,.delete{
     background: #D43C33;
-    padding: 4px 16px;
+    padding: 4px 8px;
     color: #fff;
-   border-radius: 4px;
+    border-radius: 4px;
     font-size: 1.1em;
-    margin-top: 10px;
     cursor: pointer;
+    margin: 10px 5px;
 }
-.submit:focus{
+.submit:focus,.delete:focus{
     outline: none;
 }
 .songlist li{

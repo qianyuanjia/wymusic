@@ -13,6 +13,7 @@
                         <label>歌曲外链：<input type="text" name="url"></label>
                     </div>
                     <div class="subtn">
+                        <input type="button" value="删除" class="delete hide">
                         <input type="submit" value="确定" class="submit">
                     </div>
              </form>
@@ -39,7 +40,7 @@
             window.eventHub.on('upload_success',(data)=>{
                 this.padFormValue(data)
             })
-            $(this.view.el).find('input[type=submit]').on('click',(ev)=>{
+            $(this.view.el).find('.submit').on('click',(ev)=>{
                 ev.preventDefault()
                 var formObj=$(this.view.el).find('form').get(0)
                 if(!(formObj.name.value && formObj.singer.value && formObj.url.value)){
@@ -94,7 +95,22 @@
             window.eventHub.on('fetchSongInfo',(data)=>{
                 this.padFormValue(data)
                 this.updateId=data.id
-                $(this.view.el).find('input[type=submit]').val('修改')
+                $(this.view.el).find('.submit').val('修改')
+                $(this.view.el).find('.delete').removeClass('hide')
+
+            })
+            $(this.view.el).find('.delete').on('click',(ev)=>{
+                var song = AV.Object.createWithoutData('Song', this.updateId);
+                song.destroy().then((info)=>{
+                    window.eventHub.emit('delete_success',info)
+                    $('.uploading').removeClass('hide').children().text('删除成功！')
+                    setTimeout(()=>{
+                        $('.uploading').addClass('hide')
+                    },1000)
+                    $(this.view.el).find('form').get(0).reset()
+                    $(this.view.el).find('.submit').val('确定')
+                    $(ev.currentTarget).addClass('hide')
+                });
             })
         }
     }

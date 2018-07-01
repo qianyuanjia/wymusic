@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4858f8-af42-4560-91be-14111c68391d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/songlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/songlist.js" afterDir="false" />
     </list>
@@ -29,26 +30,26 @@
       <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="-642">
+              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="448">
+              <caret line="105" column="63" lean-forward="true" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="songlist.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="songlist.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/songlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+            <state relative-caret-position="565">
+              <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -79,6 +80,7 @@
       <find>exp</find>
       <find>wrap</find>
       <find>upbtn</find>
+      <find>subtn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/js/upload.js" />
         <option value="$PROJECT_DIR$/src/admin.html" />
         <option value="$PROJECT_DIR$/src/css/admin.css" />
-        <option value="$PROJECT_DIR$/src/js/songlist.js" />
         <option value="$PROJECT_DIR$/src/js/form.js" />
+        <option value="$PROJECT_DIR$/src/js/songlist.js" />
       </list>
     </option>
   </component>
@@ -188,12 +190,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530369419645</updated>
       <workItem from="1530369423269" duration="11022000" />
-      <workItem from="1530404948519" duration="17969000" />
+      <workItem from="1530404948519" duration="19589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28991000" />
+    <option name="totallyTimeSpent" value="30611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1360" height="877" extended-state="6" />
@@ -290,6 +292,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="8" column="19" selection-start-line="5" selection-start-column="16" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -299,29 +308,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-783">
-          <caret line="8" column="19" selection-start-line="5" selection-start-column="16" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/songlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+        <state relative-caret-position="-642">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="448">
+          <caret line="105" column="63" lean-forward="true" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/songlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
         </state>
       </provider>
     </entry>
