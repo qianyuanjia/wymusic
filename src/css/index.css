@@ -11,7 +11,7 @@
 h1,h2,h3,h4,h5{
     font-weight: normal;
 }
-header{
+.head header{
     background: #D43C33;
     height: 9.8vh;
     display: flex;
@@ -30,17 +30,17 @@ main{
     height: 100vh;
     padding-top: 16.3vh;
 }
-header .logo{
+.head header .logo{
     display: flex;
     align-items: center;
     height: 100%;
     width: 9em;
 }
-header svg{
+.head header svg{
     width: 100%;
     align-items: center;
 }
-header .download_app{
+.head header .download_app{
     color: #ffffff;
     padding: 4px 10px;
     border: 1px solid #E79D97;
@@ -198,4 +198,105 @@ nav .tablist li.active::before{
     font-size: 0.2em;
     text-align: center;
     padding-top: 1vh;
+}
+
+.tab-1{
+    display: none;
+}
+
+
+.tab-2 .poster{
+    background: url("../images/hotsongbg.jpg") no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 22vh;
+    justify-content: center;
+    padding-left: 6%;
+    background-size: contain;
+}
+
+.poster .music_cloud_text{
+    width: 3em;
+    margin-left: 0.2em;
+}
+.poster .hot_search_text{
+    width: 9em;
+    margin-top: 0.2em;
+}
+.poster .update_time{
+    color: #fff;
+    font-size: 0.5em;
+    margin-top: 0.6em;
+}
+.hotsonglist li{
+    display: flex;
+    align-items: center;
+}
+.hotsonglist li .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    border-bottom: 1px solid #F1F1F2;
+    padding:1vh 0.6em 1vh 0;
+}
+.hotsonglist li .number{
+    color:#DF3436;
+    font-weight: bold;
+    width: 2.5em;
+    text-align: center;
+}
+.hotsonglist li .singer{
+    color: #91898F;
+    font-size: 0.5em;
+}
+.hotsonglist li .singer img{
+    width: 1em;
+}
+.tab-2{
+    display: none;
+}
+
+.search_head{
+    border-bottom: 1px solid #ddd;
+    padding: 3vh;
+}
+.search_head .search{
+    background:#EBECEC;
+    padding: 0.3em 0.5em;
+    display: flex;
+    height: 2em;
+    align-items: center;
+    border-radius: 1em;
+}
+.search_head .search img{
+    width: 0.9em;
+    margin-right: 0.4em;
+}
+.search_head .search input{
+    border: none;
+    background: transparent;
+    font-size: 0.9em;
+}
+.search_head .search input:focus{
+    outline: none;
+}
+.search_badge{
+    padding: 0.8em;
+}
+.search_badge h2{
+    color: #6D6773;
+    font-size: 0.5em;
+}
+.search_badge .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8em 0;
+}
+.search_badge .wrap span{
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    padding: 0.4em 0.8em;
+    border-radius: 1em/50%;
+    margin: 0.3em;
 }
