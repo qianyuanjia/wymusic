@@ -89,6 +89,7 @@
                         },1000)
                         formObj.reset()
                         targetObj.value='确定'
+                        $('.delete').addClass('hide')
                     });
                 }
             })

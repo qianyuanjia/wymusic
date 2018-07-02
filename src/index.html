@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易云音乐</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/leancloud-storage/dist/av-min.js"></script>
 </head>
 <body>
     <div class="head">
@@ -16,13 +18,7 @@
            </h1>
             <span class="download_app">下载APP</span>
         </header>
-        <nav>
-            <ul class="tablist">
-                <li class="active">推荐音乐</li>
-                <li>热歌榜</li>
-                <li>搜索</li>
-            </ul>
-        </nav>
+        <nav></nav>
     </div>
     <main>
         <div class="tab-1">
@@ -85,38 +81,8 @@
 </section>
 <section>
     <h2 class="title"><span>最新音乐</span></h2>
-    <ul class="newlist">
-        <li>
-            <div>
-                <h2>怪咖</h2>
-                <p>
-                    <img src="images/sq.png" alt="">
-                    薛之谦-怪咖
-                </p>
-            </div>
-            <img src="images/playicon.png" alt="" class="play_icon">
-        </li>
-        <li>
-            <div>
-                <h2>怪咖</h2>
-                <p>
-                    <img src="images/sq.png" alt="">
-                    薛之谦-怪咖
-                </p>
-            </div>
-            <img src="images/playicon.png" alt="" class="play_icon">
-        </li>
-        <li>
-            <div>
-                <h2>怪咖</h2>
-                <p>
-                    <img src="images/sq.png" alt="">
-                    薛之谦-怪咖
-                </p>
-            </div>
-            <img src="images/playicon.png" alt="" class="play_icon">
-        </li>
-    </ul>
+    <div class="loading"><img src="images/loading.gif" alt=""></div>
+    <ul class="newlist"></ul>
 </section>
         <section class="bot">
             <div class="svgwrap">
@@ -200,5 +166,7 @@
             </section>
         </div>
     </main>
+    <script src="js/index/tab.js"></script>
+    <script src="js/index/newlist.js"></script>
 </body>
 </html>

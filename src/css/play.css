@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: inherit;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+}
+.needle{
+    position: absolute;
+    top: 0;
+    left: 47%;
+    width:6em;
+    z-index: 2;
+}
+header img{
+    width: 7em;
+}
+header{
+   padding: 1em 0.6em;
+}
+section.disc{
+    display: flex;
+    justify-content: center;
+    padding: 0.7em 0;
+    position: relative;
+
+}
+section.disc .disc_pie{
+    width: 18em;
+    height: 18em;
+    z-index: 1;
+}
+
+section.disc .disc_default,
+section.disc .disc_post{
+    position: absolute;
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    transform: scale(0.9);
+}
+section.disc .disc_light{
+    position: absolute;
+    width: 18em;
+    height: 18em;
+}
+section.disc .disc_play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 3.5em;
+}
+section.disc .disc_post.play{
+    animation: disc_rotate 10s linear infinite;
+}
+@keyframes disc_rotate {
+    0%{
+        transform: scale(0.9) rotate(0);
+    }
+    100%{
+        transform: scale(0.9) rotate(360deg);
+    }
+}
+
+
+section.bot{
+    margin-top: 1em;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.bot h2,section.bot p{
+    text-align: center;
+    color: #BFBFBF;
+}
+section.bot .songname{
+    font-size: 1.2em;
+    color: #fff;
+    padding-bottom: 0.4em;
+}
+section.bot p.active{
+    color: #fff;
+}
+section.bot .lyrics{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+section.bot .lyrics p{
+    padding: 0.2em 0;
+}
+
+
+.wrap::before{
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    background: url("../images/poster1.jpg") center no-repeat;
+    background-size: cover;
+    filter: blur(12px);
+    width: 100%;
+    z-index: -2;
+}
+.wrap::after{
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    z-index: -1;
+}
+
+section.disc .disc_play.play{
+    display: none;
+}

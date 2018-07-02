@@ -77,6 +77,7 @@ nav .tablist li.active::before{
     position: absolute;
     display: block;
     width: 60%;
+    bottom: -1px;
 }
 
 .title{
@@ -147,7 +148,7 @@ nav .tablist li.active::before{
 }
 
 .newlist{
-    padding-left: 2%;
+    padding-left: 3%;
 }
 .newlist li{
     border-bottom: 1px solid #F1F1F2;
@@ -155,6 +156,7 @@ nav .tablist li.active::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1em;
 }
 .newlist li p{
     color: #91898F;
@@ -168,7 +170,10 @@ nav .tablist li.active::before{
     width: 1.5em;
     height: 1.5em;
 }
-
+.loading{
+    display: flex;
+    justify-content: center;
+}
 .bot{
     background: url("../images/botbg.png") center;
     height: 28vh;
@@ -200,9 +205,6 @@ nav .tablist li.active::before{
     padding-top: 1vh;
 }
 
-.tab-1{
-    display: none;
-}
 
 
 .tab-2 .poster{
@@ -253,9 +255,7 @@ nav .tablist li.active::before{
 .hotsonglist li .singer img{
     width: 1em;
 }
-.tab-2{
-    display: none;
-}
+
 
 .search_head{
     border-bottom: 1px solid #ddd;
@@ -299,4 +299,8 @@ nav .tablist li.active::before{
     padding: 0.4em 0.8em;
     border-radius: 1em/50%;
     margin: 0.3em;
+}
+
+.tab-3,.tab-2{
+    display: none;
 }
