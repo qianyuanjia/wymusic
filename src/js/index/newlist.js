@@ -2,7 +2,7 @@
     let view={
         el:'.newlist',
         template:`
-            <li data-song-id="{{id}}}">
+            <li data-song-id="{{id}}">
                 <div>
                     <h2>{{name}}</h2>
                     <p>
@@ -41,6 +41,13 @@
                 this.view.render(songs)
                 $('.loading').hide()
             })
+        },
+        fetchSongInfo(id){
+            var query = new AV.Query('Song');
+            query.get(id).then((song)=>{
+                let url=encodeURIComponent(song.attributes.url)
+                window.location.href='play.html?url='+url+'&id='+id;
+            })
         }
     }
     let controller={
@@ -55,7 +62,8 @@
                 this.modle.getSongs.call(this)
             }
             $(this.view.el).on('click','li',(ev)=>{
-
+                let id=$(ev.currentTarget).attr('data-song-id')
+                this.modle.fetchSongInfo(id)
             })
         }
     }

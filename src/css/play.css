@@ -45,6 +45,8 @@ section.disc .disc_post{
     height: 18em;
     border-radius: 50%;
     transform: scale(0.9);
+    animation: disc_rotate 10s linear infinite;
+    animation-play-state: paused;
 }
 section.disc .disc_light{
     position: absolute;
@@ -57,10 +59,12 @@ section.disc .disc_play{
     top: 50%;
     transform: translate(-50%,-50%);
     width: 3.5em;
+    z-index: 10;
 }
 section.disc .disc_post.play{
-    animation: disc_rotate 10s linear infinite;
+    animation-play-state: running;
 }
+
 @keyframes disc_rotate {
     0%{
         transform: scale(0.9) rotate(0);
@@ -96,20 +100,25 @@ section.bot .lyrics{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 section.bot .lyrics p{
     padding: 0.2em 0;
 }
 
-
-.wrap::before{
-    content: '';
-    display: block;
+section.bot .lyrics .lyricplace{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+.wrap .before{
     height: 100vh;
     position: absolute;
-    background: url("../images/poster1.jpg") center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(12px);
+    filter: blur(10px);
     width: 100%;
     z-index: -2;
 }

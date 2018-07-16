@@ -12,6 +12,12 @@
                     <div class="row">
                         <label>歌曲外链：<input type="text" name="url"></label>
                     </div>
+                    <div class="row">
+                        <label>歌曲封面：<input type="text" name="poster"></label>
+                    </div>
+                    <div class="row">
+                        <label>歌词：<input type="text" name="lyrics"></label>
+                    </div>
                     <div class="subtn">
                         <input type="button" value="删除" class="delete hide">
                         <input type="submit" value="确定" class="submit">
@@ -35,6 +41,8 @@
             formObj.name.value=data.name
             formObj.singer.value=data.singer
             formObj.url.value=data.url
+            formObj.poster.value=data.poster
+            formObj.lyrics.value=data.lyrics
         },
         bindEvents(){
             window.eventHub.on('upload_success',(data)=>{
@@ -61,7 +69,9 @@
                     song.set({
                         name:formObj.name.value,
                         singer:formObj.singer.value,
-                        url:formObj.url.value
+                        url:formObj.url.value,
+                        poster:formObj.poster.value,
+                        lyrics:formObj.lyrics.value
                     });
                     song.save().then(function (info) {
                         window.eventHub.emit('save_success',info)
@@ -78,7 +88,9 @@
                     song.set({
                         name:formObj.name.value,
                         singer:formObj.singer.value,
-                        url:formObj.url.value
+                        url:formObj.url.value,
+                        poster:formObj.poster.value,
+                        lyrics:formObj.lyrics.value
                     });
                     // 保存到云端
                     song.save().then(function (info) {
