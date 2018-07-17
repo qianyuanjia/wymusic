@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a4858f8-af42-4560-91be-14111c68391d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/play.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/play.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/admin/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/admin/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/play/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/play/audio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/play/discplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/play/discplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/play/lyrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/play/lyrics.js" afterDir="false" />
-    </list>
+    <list default="true" id="9a4858f8-af42-4560-91be-14111c68391d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -198,49 +190,6 @@
               <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
               <item name="wymusic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="gettoken" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wymusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wymusic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="play" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -282,16 +231,15 @@
       <workItem from="1530489540424" duration="16099000" />
       <workItem from="1530522386370" duration="6518000" />
       <workItem from="1531738065819" duration="12913000" />
-      <workItem from="1531825373304" duration="3167000" />
+      <workItem from="1531825373304" duration="3355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87599000" />
+    <option name="totallyTimeSpent" value="87787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18322763" />
       <window_info anchor="bottom" id="TODO" order="6" />
