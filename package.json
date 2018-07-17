@@ -3,6 +3,7 @@
     "server": "node ./gettoken/server.js"
   },
   "dependencies": {
+    "grunt": "^1.0.3",
     "jquery": "^3.3.1",
     "js-url": "^2.3.0",
     "leancloud-storage": "^3.7.3",

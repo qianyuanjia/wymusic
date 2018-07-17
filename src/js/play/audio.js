@@ -25,6 +25,9 @@
                     let time=Math.round(this.currentTime*100)/100
                     window.eventHub.emit('playTime',time)
                 })
+                $(this.view.el).on('ended',()=>{
+                    window.eventHub.emit('playEnd')
+                })
             })
 
         }

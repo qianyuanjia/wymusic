@@ -54,12 +54,18 @@
                     $('audio').get(0).play()
                     $(this.view.el).children('.disc_play').hide()
                         .siblings('.disc_post').addClass('play')
+                    window.eventHub.emit('startPlay')
                 }else{
                     $('audio').get(0).pause()
                     $(this.view.el).children('.disc_play').show()
                         .siblings('.disc_post').removeClass('play')
                 }
                 this.play=!this.play
+            })
+            window.eventHub.on('playEnd',()=>{
+                $(this.view.el).children('.disc_play').show()
+                    .siblings('.disc_post').removeClass('play')
+                this.play=false
             })
         }
     }

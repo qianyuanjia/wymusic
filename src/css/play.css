@@ -95,15 +95,16 @@ section.bot p.active{
     color: #fff;
 }
 section.bot .lyrics{
-    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     position: relative;
+    height: 15vh;
 }
 section.bot .lyrics p{
-    padding: 0.2em 0;
+    height: 5vh;
+    line-height: 5vh;
 }
 
 section.bot .lyrics .lyricplace{
@@ -136,3 +137,4 @@ section.bot .lyrics .lyricplace{
 section.disc .disc_play.play{
     display: none;
 }
+

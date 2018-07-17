@@ -46,11 +46,23 @@
                 })
             })
             window.eventHub.on('playTime',time=>{
-                for(let i=0;i<this.lyricsArr.length-1;i++){
+                for(var i=0;i<this.lyricsArr.length-1;i++){
                     if(this.lyricsArr[i].time<=time && this.lyricsArr[i+1].time>=time){
-                        console.log(this.lyricsArr[i].lyrics)
+                        $(this.view.el).find('.lyricplace').css('top',`-${(i-1)*5}vh`)
+                        $(this.view.el).find('.lyricplace p').eq(i).addClass('active').siblings().removeClass('active')
                     }
                 }
+                if(i==this.lyricsArr.length-1 && this.lyricsArr[i-1].time<time && Math.abs(this.lyricsArr[i].time-time)<0.5){
+                    $(this.view.el).find('.lyricplace').css('top',`-${(i-1)*5}vh`)
+                    $(this.view.el).find('.lyricplace p').eq(i).addClass('active').siblings().removeClass('active')
+                }
+            })
+            window.eventHub.on('playEnd',()=>{
+                $(this.view.el).hide()
+                $(this.view.el).find('.lyricplace').css('top','0')
+            })
+            window.eventHub.on('startPlay',()=>{
+                $(this.view.el).show()
             })
         }
     }

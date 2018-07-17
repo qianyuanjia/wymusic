@@ -38,11 +38,11 @@
         },
         padFormValue(data){
             let formObj=$(this.view.el).find('form').get(0)
-            formObj.name.value=data.name
-            formObj.singer.value=data.singer
-            formObj.url.value=data.url
-            formObj.poster.value=data.poster
-            formObj.lyrics.value=data.lyrics
+            formObj.name.value=data.name || ''
+            formObj.singer.value=data.singer || ''
+            formObj.url.value=data.url || ''
+            formObj.poster.value=data.poster || ''
+            formObj.lyrics.value=data.lyrics || ''
         },
         bindEvents(){
             window.eventHub.on('upload_success',(data)=>{
